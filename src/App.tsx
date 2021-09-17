@@ -77,11 +77,10 @@ export function App() {
 
       </nav>
 
-      <div className="container">
-        <header>
-          <span className="category">Categoria:<span> {selectedGenre.title}</span></span>
-        </header>
-
+      <Content
+        selectedGenreId={selectedGenreId}
+      />
+  
         <main>
           <div className="movies-list">
             {movies.map(movie => (
